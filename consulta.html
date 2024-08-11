@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="/css/consulta.css">
+</head>
+<body>
+    <a href="index.html">Regresar</a>
+
+    <main class="container"></main>
+    <section class="crud">
+        <h1 class="crud__title">Registro de Colaboradores</h1>
+        <form id="formRegistro" class="crud__form">
+            <input type="text" placeholder="Nombres y apellidos" id="nameInput" 
+            class="form__input">
+            <input type="number" placeholder="cedula" id="cedulaInput" 
+            class="form__input">
+            <input type="email" placeholder="Email" id="emailInput" 
+            class="form__input">
+            <input type="text" placeholder="ARL" id="arlInput" 
+            class="form__input">
+            <input type="text" placeholder="EPS" id="epsInput" 
+            class="form__input">
+            <input type="number" placeholder="Contacto de Emergencia" id="ContactoInput" 
+            class="form__input">
+            <input type="date" placeholder="Fecha de Ingreso" id="fechaInput" 
+            class="form__input">
+
+            <button type="submit" id="submitButton" class="button button--primary">Agregar</button>
+
+        </form>
+
+        <table class="crud__table">
+       <thead>
+        <tr>
+            <th class="table__header">Nombres y apellidos</th>
+            <th class="table__header">Cedula</th>
+            <th class="table__header">Email</th>
+            <th class="table__header">ARL</th>
+            <th class="table__header">EPS</th>
+            <th class="table__header">Contacto de Emergencia</th>
+            <th class="table__header">Fecha de Ingreso</th>
+            <th class="table__header">Opcion</th>
+        </tr>
+
+       </thead>
+       <tbody id="tableBody" class="table__body">
+
+       </tbody>
+        </table>
+
+    </section>
+
+
+    <script src="/js/app.js"></script>
+    
+
+
+</body>
+</html>
